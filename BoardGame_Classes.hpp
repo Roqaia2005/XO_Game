@@ -5,6 +5,7 @@
 #ifndef _BoardGame_CLASSES_H
 #define _BoardGame_CLASSES_H
 #include <iostream>
+
 using namespace std;
 
 class Board {
@@ -14,6 +15,7 @@ protected:
    int  n_moves = 0;
 
 public:
+
    // Return true  if move is valid and put it on board
    // within board boundaries in empty cell
    // Return false otherwise
