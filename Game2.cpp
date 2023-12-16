@@ -5,8 +5,10 @@
 #include "BoardGame_Classes.hpp"
 
 using namespace std;
+
 connect_four_board::connect_four_board() {
     n_rows=6;
+    
     n_cols=7;
     board = new char*[n_rows];
     for (int i = 0; i < n_rows; i++) {
