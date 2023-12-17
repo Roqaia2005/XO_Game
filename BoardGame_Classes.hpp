@@ -15,10 +15,9 @@ protected:
    int  n_moves = 0;
 
 public:
-
    // Return true  if move is valid and put it on board
    // within board boundaries in empty cell
-   // Return false otherwise
+   // Return false otherwise...
    virtual bool update_board (int x, int y, char symbol) = 0;
    // Returns true if there is any winner
    // either X or O
@@ -71,10 +70,6 @@ public:
     bool is_draw();
     bool game_is_over();
 };
-
-
-
-
 class Player {
     protected:
         string name;
@@ -109,7 +104,6 @@ public:
   
 void get_move (int& x,int&y);
 };
-
 
 ///////////////////////////////////////////
 // This class represents a random computer player
