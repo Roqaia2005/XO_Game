@@ -3,10 +3,7 @@
 #include <algorithm>
 #include <ctime>
 #include "BoardGame_Classes.hpp"
-
-
 using namespace std;
-
 tictactoeBoard::tictactoeBoard() {
     n_rows = n_cols = 5;
     board = new char*[n_rows];
@@ -16,7 +13,6 @@ tictactoeBoard::tictactoeBoard() {
             board[i][j] = ' ';
     }
 }
-
 bool tictactoeBoard::update_board(int x, int y, char mark) {
     if (!(x < 0 || x >= n_rows || y < 0 || y >= n_cols) && (board[x][y] == ' ')) {
         board[x][y] = mark;
@@ -55,8 +51,6 @@ bool tictactoeBoard::is_winner() {
 
     return false;
 }
-
-
 bool tictactoeBoard::is_draw() {
     return (n_moves == n_rows * n_cols);
 }
